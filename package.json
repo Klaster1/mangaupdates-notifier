@@ -1,0 +1,27 @@
+{
+  "id": "mangaupdates-notifier@jetpack",
+  "title": "MangaUpdates Notifier",
+  "name": "mangaupdates-notifier",
+  "version": "0.0.1",
+  "description": "Notifies about new chapters in your MangaUpdates reading list.",
+  "author": "Klaster_1 <Klaster1@gmail.com>",
+  "engines": {
+    "firefox": ">=36.0"
+  },
+  "license": "MIT",
+  "preferences": [
+    {
+      "name": "updateInterval",
+      "type": "integer",
+      "value": 10,
+      "title": "Update interval"
+    }
+  ],
+  "icon": "./data/icon-64.png",
+  "devDependencies": {
+    "jpm": "0.0.23"
+  },
+  "scripts": {
+    "build": "jpm xpi"
+  }
+}
