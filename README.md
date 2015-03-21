@@ -1,12 +1,14 @@
 # mangaupdates-notifier
 Firefox plugin to notify about updated series in your reading list.
 
-## How to
+## Installation
+Drag and drop [mangaupdates-notifier@jetpack.xpi](https://github.com/Klaster1/mangaupdates-notifier/raw/master/mangaupdates-notifier%40jetpack.xpi) onto your Firefox.
+
+## Building
 ```
 npm install
 npm run build
 ```
-Drag built XPI onto Firefox and accept.
 
 ## Features
 
@@ -15,6 +17,7 @@ Drag built XPI onto Firefox and accept.
 3. Update interval can be changed in settings.
 4. Click opens your reading list.
 5. If you're not logged in, button will be greyed out.
+6. Removes new chapter link from list when current chapter is the same or greate (optional, on by default).
 
 ## Contributing
 I'd really appreciate ideas on how to improve usability while keeping things simple, feel free to open issues.

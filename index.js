@@ -90,10 +90,17 @@ PageMod({
 	include: client.listURL,
 	contentScriptFile: ['./contentScript.js'],
 	onAttach: worker => {
+		let emitPrefs = () => worker.port.emit('prefs', JSON.stringify(prefs))
+		emitPrefs()
+		preferences.on('removeNewLink', emitPrefs);
 		worker.port.on('series', data => {
 			icon.badge = client.getUpdatedSeriesText(data).length
 		})
 		worker.port.on('error', icon.disable)
+		worker.on('detach', () => {
+			preferences.removeListener('removeNewLink', emitPrefs)
+			emitPrefs = null;
+		})
 	}
 })
 

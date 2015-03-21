@@ -15,6 +15,12 @@
       "type": "integer",
       "value": 10,
       "title": "Update interval"
+    },
+    {
+      "name": "removeNewLink",
+      "type": "bool",
+      "value": true,
+      "title": "Remove new chapter link if current chapter is greater."
     }
   ],
   "icon": "./data/icon-64.png",
