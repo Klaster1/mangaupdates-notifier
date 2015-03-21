@@ -1,4 +1,7 @@
 **/*.svg
 *.xpi
+*.md
 .jpmignore
+.gitignore
+.git
 node_modules
