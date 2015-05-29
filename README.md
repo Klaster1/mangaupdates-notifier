@@ -3,7 +3,7 @@ Firefox plugin to notify about updated series in your reading list.
 ![](https://github.com/Klaster1/mangaupdates-notifier/raw/master/screenshots/screenshot-1.png)
 
 ## Installation
-Drag and drop [mangaupdates-notifier@jetpack.xpi](https://github.com/Klaster1/mangaupdates-notifier/raw/master/mangaupdates-notifier%40jetpack.xpi) onto your Firefox.
+Drag and drop [mangaupdates-notifier@jetpack.xpi](https://github.com/Klaster1/mangaupdates-notifier/raw/master/mangaupdates-notifier%40jetpack-0.0.2.xpi) onto your Firefox.
 
 ## Building
 ```

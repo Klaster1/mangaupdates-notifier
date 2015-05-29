@@ -2,11 +2,15 @@
   "id": "mangaupdates-notifier@jetpack",
   "title": "MangaUpdates Notifier",
   "name": "mangaupdates-notifier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Notifies about new chapters in your MangaUpdates reading list.",
   "author": "Klaster_1 <Klaster1@gmail.com>",
   "engines": {
-    "firefox": ">=36.0"
+    "firefox": ">=38.0"
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/Klaster1/mangaupdates-notifier.git"
   },
   "license": "MIT",
   "preferences": [
@@ -23,9 +27,8 @@
       "title": "Remove new chapter link if current chapter is greater."
     }
   ],
-  "icon": "./data/icon-64.png",
   "devDependencies": {
-    "jpm": "0.0.23"
+    "jpm": "^1.0.0"
   },
   "scripts": {
     "build": "jpm xpi"
