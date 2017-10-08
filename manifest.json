@@ -1,0 +1,48 @@
+{
+	"name": "MangaUpdates Notifier",
+	"version": "1.0.1",
+	"manifest_version": 2,
+	"description": "Notifies about new chapters in your MangaUpdates reading list.",
+	"applications": {
+		"gecko": {
+			"id": "mangaupdates-notifier@jetpack",
+			"strict_min_version": "56.0"
+		}
+	},
+	"icons": {
+		"48": "icon.svg",
+		"96": "icon.svg"
+	},
+	"browser_action": {
+		"default_icon": "icon.svg",
+		"default_title": "Test"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://www.mangaupdates.com/mylist.html"],
+			"js": [
+				"lib/MUSeriesParser.js",
+				"lib/MUListObserver.js",
+				"content.js"
+			]
+		}
+	],
+	"background": {
+		"scripts": [
+			"lib/defaults.js",
+			"lib/ChangableInterval.js",
+			"lib/MUClient.js",
+			"lib/MUSeriesParser.js",
+			"lib/MUButton.js",
+			"background.js"
+		]
+	},
+	"options_ui": {
+		"page": "options.html",
+		"browser_style": true
+	},
+	"permissions": [
+		"https://www.mangaupdates.com/mylist.html",
+		"storage"
+	]
+}
