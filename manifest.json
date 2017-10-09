@@ -21,6 +21,7 @@
 		{
 			"matches": ["https://www.mangaupdates.com/mylist.html"],
 			"js": [
+				"lib/defaults.js",
 				"lib/MUSeriesParser.js",
 				"lib/MUListObserver.js",
 				"content.js"
