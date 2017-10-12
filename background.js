@@ -1,7 +1,7 @@
 const minToMs = min => min * 1000 * 60
 
 const main = async () => {
-	const button = new MUButton(browser.browserAction)
+	const button = new MUButton(browser.browserAction, browser.runtime)
 	const seriesParser = new MUSeriesParser(window.DOMParser)
 	const client = new MUClient(window.fetch.bind(window))
 	const options = await browser.storage.local.get(defaults)
