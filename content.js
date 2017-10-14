@@ -1,6 +1,7 @@
-const main = async () => {
-	const seriesParser = new MUSeriesParser(window.DOMParser)
-	const listObserver = new MUListObserver(document, window.MutationObserver)
+// @ts-check
+const content = async () => {
+	const seriesParser = new MUSeriesParser()
+	const listObserver = new MUListObserver(document)
 	const options = await browser.storage.local.get(defaults)
 
 	browser.storage.onChanged.addListener(changes => {
@@ -23,6 +24,10 @@ const main = async () => {
 		}
 	}
 
+	/**
+	 * Extracts chapter number from element
+	 * @param {Element} el
+	 */
 	const chnum = el => +el.textContent.match(/\d+/)[0]
 	const syncChapterStatus = () => document.querySelectorAll(`${MUSeriesParser.LIST_SELECTOR} tr[id]`)
 	.forEach(row => {
@@ -40,4 +45,4 @@ const main = async () => {
 		checkSeries()
 	})
 }
-main()
+content()

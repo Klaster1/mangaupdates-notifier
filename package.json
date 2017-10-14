@@ -9,7 +9,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "web-ext": "^2.0.0"
+    "web-ext": "^2.0.0",
+    "web-ext-types": "^0.3.2"
   },
   "scripts": {
     "web-ext": "web-ext",

@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "None",
+		"target": "ES2017",
+		"downlevelIteration": true,
+		"typeRoots": ["@types", "node_modules/web-ext-types"]
+	},
+	"files": [
+		"lib/types.d.ts",
+		"lib/defaults.js",
+		"lib/ChangableInterval.js",
+		"lib/MUClient.js",
+		"lib/MUSeriesParser.js",
+		"lib/MUListObserver.js",
+		"lib/MUButton.js",
+		"background.js",
+		"content.js"
+	]
+}

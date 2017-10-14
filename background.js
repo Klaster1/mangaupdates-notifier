@@ -1,9 +1,15 @@
+// @ts-check
+
+/**
+ * Converts minutes to miliseconds
+ * @param {number} min
+ */
 const minToMs = min => min * 1000 * 60
 
-const main = async () => {
+const background = async () => {
 	const button = new MUButton(browser.browserAction, browser.runtime)
-	const seriesParser = new MUSeriesParser(window.DOMParser)
-	const client = new MUClient(window.fetch.bind(window))
+	const seriesParser = new MUSeriesParser()
+	const client = new MUClient()
 	const options = await browser.storage.local.get(defaults)
 
 	const fetchList = async () => {
@@ -21,6 +27,7 @@ const main = async () => {
 		url: MUClient.LIST_URL
 	})
 
+	/** @param {IErrorMessage|ISeriesMessage} message */
 	const onMessage = (message) => {
 		switch (message.type) {
 			case 'error': {
@@ -50,4 +57,4 @@ const main = async () => {
 	button.onClicked.addListener(openTab)
 	browser.runtime.onMessage.addListener(onMessage)
 }
-main()
+background()
