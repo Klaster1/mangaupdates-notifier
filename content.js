@@ -1,4 +1,3 @@
-// @ts-check
 const content = async () => {
 	const seriesParser = new MUSeriesParser()
 	const listObserver = new MUListObserver(document)

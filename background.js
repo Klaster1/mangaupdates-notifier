@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Converts minutes to miliseconds
  * @param {number} min
