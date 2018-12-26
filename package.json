@@ -1,6 +1,6 @@
 {
   "name": "mangaupdates-notifier",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Notifies about new chapters in your MangaUpdates reading list.",
   "author": "Klaster_1 <Klaster1@gmail.com>",
   "repository": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "web-ext": "^2.0.0",
-    "web-ext-types": "^0.3.2"
+    "web-ext-types": "^3.0.0"
   },
   "scripts": {
     "web-ext": "web-ext",
