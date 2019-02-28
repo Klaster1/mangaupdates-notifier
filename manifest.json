@@ -1,12 +1,12 @@
 {
 	"name": "MangaUpdates Notifier",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"manifest_version": 2,
 	"description": "Notifies about new chapters in your MangaUpdates reading list.",
 	"applications": {
 		"gecko": {
 			"id": "mangaupdates-notifier@jetpack",
-			"strict_min_version": "56.0"
+			"strict_min_version": "57.0"
 		}
 	},
 	"icons": {
