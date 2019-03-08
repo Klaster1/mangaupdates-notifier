@@ -1,6 +1,6 @@
 {
 	"name": "MangaUpdates Notifier",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"manifest_version": 2,
 	"description": "Notifies about new chapters in your MangaUpdates reading list.",
 	"applications": {

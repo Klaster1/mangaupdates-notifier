@@ -28,7 +28,7 @@ const content = async () => {
 	 * @param {Element} el
 	 */
 	const chnum = el => +el.textContent.match(/\d+/)[0]
-	const syncChapterStatus = () => document.querySelectorAll(`${MUSeriesParser.LIST_SELECTOR} tr[id]`)
+	const syncChapterStatus = () => document.querySelectorAll(`${MUSeriesParser.LIST_SELECTOR} .row`)
 	.forEach(row => {
 		const updateLink = row.querySelector('.newlist')
 		if (!updateLink) return
